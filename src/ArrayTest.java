@@ -20,13 +20,27 @@ public class ArrayTest {
         int c10000=10000;
         int c5000=5000;
         int c1000=1000;
+        int c500=500;
+        int c100=100;
+        int c50=50;
+        int c10=10;
 
-        int money=25000;
+        int money=213281;
 
-        System.out.printf("5만원권 몫, 나머지 %d %d \n",money/c50000,money%c50000);
-        System.out.printf("1만권 몫, 나머지 %d %d \n",money/c10000,money%c10000);
-        System.out.printf("5천원권 몫, 나머지 %d %d\n",money/c5000,money%c5000);
-        System.out.printf("1천원권 몫, 나머지 %d %d\n",money/c1000,money%c1000);
+        System.out.printf("5만원 개, 나머지 %d %d \n",money/c50000,money%c50000);
+        money%=c50000;
+        System.out.printf("1만 개, 나머지 %d %d \n",money/c10000,money%c10000);
+        money%=c10000;
+        System.out.printf("5천원 개, 나머지 %d %d\n",money/c5000,money%c5000);
+        money%=c5000;
+        System.out.printf("1천원 개, 나머지 %d %d\n",money/c1000,money%c1000);
+        money%=c1000;
+        System.out.printf("500원 개, 나머지 %d %d\n",money/c1000,money%c1000);
+        money%=c500;
+        System.out.printf("100원 개, 나머지 %d %d\n",money/c100,money%c100);
+        money%=c100;
+
+
 
 
 
