@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String dap[]=input.next().split(":");
+        System.out.println(dap[0]+":"+dap[1]);
+
+
+    }
+}
