@@ -6,6 +6,12 @@ import java.util.List;
 public class Names {
 
     private List<String> student = new ArrayList<>();
+    private List<Studnet> studentObjs = new ArrayList<>();
+
+    public List<Student> getStudentObjs(){
+        this.studentObjs.add(new Student(classNO1, name:"김경록",gitRepositoryAddress:""));
+        return studentObjs;
+    }
 
     public List<String> names() {
         this.student.add("권하준");

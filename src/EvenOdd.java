@@ -31,8 +31,8 @@ public class EvenOdd {
 //            System.out.print("홀수");
 //            System.out.print("+");
 //        }
-//
-//
+
+
 //        int b=input.nextInt();
 //
 //

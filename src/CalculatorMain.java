@@ -6,6 +6,7 @@ public class CalculatorMain {
         System.out.println(rc.minus());
         System.out.println(rc.multiple());
 
+
         if (rc.b==0){
             System.out.println("랜덤하게 생선된 숫자가 0입니다.");
         } else{
