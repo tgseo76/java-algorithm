@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+
+        String[] arr=input.next().split("[.]");
+
+        int y,m,d;
+        y=Integer.parseInt(arr[0]);
+        m=Integer.parseInt(arr[1]);
+        d=Integer.parseInt(arr[2]);
+
+        System.out.printf("%02d-%02d-%d",d,m,y);
+
+        }
+        }
+
+
