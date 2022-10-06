@@ -5,8 +5,14 @@ public class Main {
         Scanner input=new Scanner(System.in);
 
         String[] arr=input.next().split(":");
-        
-        System.out.println(arr[1]);
+
+        if (arr[1].equals("00")){
+System.out.println("0");
+        }
+        else {
+            System.out.println(arr[1]);
+        }
+
         }
         }
 
