@@ -12,6 +12,16 @@ public class ReadFile {
         File files[] = dir.listFiles();
             for(int i=0;i<files.length;i++){
                 System.out.println(files[i]);
+
+/*
+.\.git
+.\.gitignore
+.\.idea
+.\a_file.txt
+.\java-push-ex.iml
+.\out
+.\src
+*/
             }
     }
 }
