@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        String[] arr = input.next().split("[.]");
+
+        System.out.println(arr[0]);
+        System.out.println(arr[1]);
+        }
+
+
+    }
+
