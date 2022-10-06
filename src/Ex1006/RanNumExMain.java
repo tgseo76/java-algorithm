@@ -1,13 +1,19 @@
 package Ex1006;
 
+import java.util.HashSet;
+
 public class RanNumExMain {
     public static void main(String[] args) {
         RanNumEx ranNumEx=new RanNumEx();
 
-        for(int i=0;i<50;i++){
+        HashSet<Integer> numbers = new HashSet<>();
+        for(int i=0;i<100;i++){
             int r = ranNumEx.gen(20);
-            System.out.println(r);
+            numbers.add(r);
         }
+
+        System.out.println(numbers);
+        System.out.println(numbers.size());
 
 
     }
