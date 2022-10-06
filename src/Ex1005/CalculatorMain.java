@@ -1,3 +1,5 @@
+package Ex1005;
+
 public class CalculatorMain {
     public static void main(String[] args) {
         RandomCalculator rc = new RandomCalculator(5);

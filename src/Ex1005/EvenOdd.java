@@ -1,3 +1,5 @@
+package Ex1005;
+
 import java.util.Scanner;
 
 public class EvenOdd {

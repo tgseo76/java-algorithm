@@ -1,3 +1,5 @@
+package Ex1005;
+
 public class Calculator {
     private int a;
     private int b;
