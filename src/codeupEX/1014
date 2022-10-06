@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String a,b,tem;
+        a= input.next();
+        b= input.next();
+
+        tem=a;
+        a=b;
+        b=tem;
+
+        System.out.printf("%s %s",a,b);
+
+
+    }
+}

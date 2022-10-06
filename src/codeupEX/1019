@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String dap[]=input.next().split("[.]");
+
+        int yyyy=Integer.parseInt(dap[0]);
+        int mm=Integer.parseInt(dap[1]);
+        int dd=Integer.parseInt(dap[2]);
+
+        System.out.printf("%04d.%02d.%02d",yyyy,mm,dd);
+
+
+    }
+}
