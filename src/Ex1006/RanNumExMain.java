@@ -6,9 +6,11 @@ public class RanNumExMain {
     public static void main(String[] args) {
         RanNumEx ranNumEx=new RanNumEx();
 
-        HashSet<Integer> numbers = new HashSet<>();
-        for(int i=0;i<100;i++){
-            int r = ranNumEx.gen(20);
+        HashSet<Character> numbers = new HashSet<>();
+        for(int i=0;i<30;i++){
+            char r;
+            int num=(int)(Math.random()*(26)+65);
+            r = (char)num;
             numbers.add(r);
         }
 
