@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner input=new Scanner(System.in);
+        String a= input.next();
+
+        int num=Integer.parseInt(a,16);
+
+        String dap=Integer.toOctalString(num);
+
+        System.out.println(dap);
+
+
+
+    }
+}
