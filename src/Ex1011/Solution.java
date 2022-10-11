@@ -16,6 +16,11 @@ public class Solution {
         }
 
     public static void main(String[] args) {
+            Solution sol = new Solution();
+            Scanner input=new Scanner(System.in);
+            int n=input.nextInt();
+
+            System.out.println(sol.solution(n));
 
     }
     }
