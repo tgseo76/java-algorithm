@@ -5,9 +5,9 @@ import java.util.Arrays;
 public class InsertionSort01 {
 
     public int[] sort(int[] arr){
-        int i=1;
+        int i=3;
 
-        for (int j=i;j==1;j--){
+        for (int j=i;j>0;j--){
             int tem=0;
             if(arr[j]<arr[j-1]){
                 tem=arr[j-1];
@@ -17,6 +17,8 @@ public class InsertionSort01 {
         }
         return arr;
     }
+
+
 
     public static void main(String[] args) {
 
