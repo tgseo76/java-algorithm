@@ -1,13 +1,23 @@
 package Ex1017;
 
-public class RightTriangle {
-    public static void main(String[] args) {
+import java.util.Scanner;
 
-        for (int i=0;i<4;i++){
+public class RightTriangle {
+    void print(int n){
+        for (int i=0;i<n;i++){
             for (int j=0;j<=i;j++){
                 System.out.print("*");
             }
-            System.out.println();
+            System.out.print("\n");
         }
+    }
+
+    public static void main(String[] args) {
+        RightTriangle rightTriangle=new RightTriangle();
+        Scanner input=new Scanner(System.in);
+        int n= input.nextInt();
+        rightTriangle.print(n);
+
+
     }
 }
