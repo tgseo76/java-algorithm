@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class RecursiveStar {
     public void rs(int a,int b){
         if (a==b+1){
-            return;
+            return ;
         }
         else {
             System.out.println("*".repeat(a));
