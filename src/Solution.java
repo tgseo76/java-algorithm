@@ -1,23 +1,26 @@
 import java.util.Scanner;
-public class Solution {
-    public String solution(int n) {
-        int cnt = 1;
-        String answer="";
-        while(cnt<n+1){
-            if(cnt%2==1){
-                answer+="수";
-            }else {
-                answer+="박";
-            }
+class Solution {
+    public long solution(int a, int b) {
+        long answer = 0;
 
-            cnt++;
+        if(a<=b){
+            for (int i = a; i <= b; i++) {
+                answer+=i;
+            }
+        }else {
+            for (int i = b; i <= a; i++) {
+                answer+=i;
+            }
         }
         return answer;
     }
+
     public static void main(String[] args) {
-        Scanner input=new Scanner(System.in);
-        int n= input.nextInt();
         Solution sol = new Solution();
-        System.out.println(sol.solution(n));
+        Scanner input=new Scanner(System.in);
+        int a = input.nextInt();
+        int b = input.nextInt();
+        System.out.println(sol.solution(a,b));
+
     }
-}
+    }

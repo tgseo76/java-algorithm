@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class SquareStar {
     void printSquareMatrix(int n){
-//        for (int i = 0; i < n; i++) {
-//            for (int j = 0; j < n; j++) {
-//                System.out.print("*");
-//            }
-//            System.out.println();
-//        }
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
         for (int i = 0; i < n; i++) {
             System.out.println("*".repeat(n));
 

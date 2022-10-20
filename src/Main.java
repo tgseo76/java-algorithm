@@ -1,16 +1,12 @@
-import java.util.Arrays;
+
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner input=new Scanner(System.in);
+        String str = "abc";
+        String repeated = str.repeat(3);
 
-        int a = input.nextInt();
-        int b = input.nextInt();
-
-        System.out.println(a&b);
-
-
-
+        System.out.println(repeated);
     }
-}
+    }
