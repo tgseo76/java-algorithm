@@ -2,6 +2,7 @@ package Ex1027;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class HashAl {
@@ -9,6 +10,10 @@ public class HashAl {
 
     public String solution(String[] participant, String[] completion) {
         Map<String, Integer> memo = new HashMap<>();
+        HashMap<String,Integer> memo1 = new HashMap<>();
+
+        List<String> arr = new ArrayList<>();
+
         for (int i = 0; i < participant.length; i++) {
             String key = participant[i];
             // 바로 put을 하지 않습니다.

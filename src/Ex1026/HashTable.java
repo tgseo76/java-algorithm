@@ -26,13 +26,15 @@ public class HashTable {
     }
 
     private int size=10000;
-    List<Node>[] table = new ArrayList[1000];
+        List<Node>[] table = new ArrayList[size];
 
     public HashTable() {
     }
 
     public HashTable(int size) {
+
         this.size = size;
+        this.table=new ArrayList[size];
     }
 
     public int hash(String str) {
@@ -42,6 +44,7 @@ public class HashTable {
         }
         return (ascii % this.size);
     }
+
 
     public void insert(String key,int value){
 //        int hashCode = hash(key);
@@ -67,7 +70,7 @@ public class HashTable {
     }
 
     public static void main(String[] args) {
-        HashTable hf = new HashTable(200);
+        HashTable hf = new HashTable(10000);
 //        String[] names = new String[]{"DongyeonKang","SubinKang", "KwanwunKo", "HyunseokKo", "KyoungdukKoo", "YeonjiGu", "SoyeonKown", "OhsukKwon", "GunwooKim", "KiheonKim", "NayeongKim", "DohyeonKim", "MinkyoungKim", "MinjiKim", "SanghoKim", "SolbaeKim", "YejinKim", "EungjunKim", "JaegeunKim", "JeonghyeonKim", "JunhoKim", "JisuKim", "kimjinah", "HaneulKim", "HeejungKim", "KimoonPark", "EunbinPark", "JeongHoonPark", "JeminPark", "TaegeunPark", "JiwonBae", "SeunggeunBaek", "JihwanByeon", "HeungseopByeon", "JeongHeeSeo", "TaegeonSeo", "SeeYunSeok", "SuyeonSeong", "SeyoelSon", "MinjiSong", "JinwooSong"};
         hf.insert("Yoonseo",1);
         hf.insert("Seoyoon",2);

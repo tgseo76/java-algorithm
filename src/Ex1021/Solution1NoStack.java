@@ -2,7 +2,7 @@ package Ex1021;
 
 import java.util.Scanner;
 
-class Solution {
+class Solution1NoStack {
     boolean solution(String s) {
         int cnt=0;
         boolean answer=true;
@@ -37,13 +37,13 @@ class Solution {
 
         return answer;
     }
-//
-//    public static void main(String[] args) {
-//        Solution sol = new Solution();
-//        Scanner input=new Scanner(System.in);
-//
-//        String a = input.next();
-//        System.out.println(sol.solution(a));
-//    }
+
+    public static void main(String[] args) {
+        Solution1NoStack sol = new Solution1NoStack();
+        Scanner input=new Scanner(System.in);
+
+        String a = input.next();
+        System.out.println(sol.solution(a));
+    }
 
 }

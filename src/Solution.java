@@ -1,26 +1,30 @@
-import java.util.Scanner;
-class Solution {
-    public long solution(int a, int b) {
-        long answer = 0;
+import java.util.*;
 
-        if(a<=b){
-            for (int i = a; i <= b; i++) {
-                answer+=i;
+class Solution {
+    public String solution(String[] participant, String[] completion) {
+        Map<String, Integer> memo = new HashMap<>();
+        for (int i = 0; i < participant.length; i++) {
+            String key = participant[i];
+            // 바로 put을 하지 않습니다.
+            // 바로 put을 할 수도 없고 숫자를 올리긴 해야겠고
+            if (!memo.containsKey(key)) {
+                memo.put(key, 0);
             }
-        }else {
-            for (int i = b; i <= a; i++) {
-                answer+=i;
+            memo.put(key, memo.get(key) + 1);
+        }
+
+        for (int i = 0; i < completion.length; i++) {
+            String key = completion[i]; // value 1
+            memo.put(key, memo.get(key) - 1);
+        }
+        for (String key : memo.keySet()) {
+            if (memo.get(key) == 1) {
+                return key;
             }
         }
-        return answer;
+
+
+        return "";
     }
 
-    public static void main(String[] args) {
-        Solution sol = new Solution();
-        Scanner input=new Scanner(System.in);
-        int a = input.nextInt();
-        int b = input.nextInt();
-        System.out.println(sol.solution(a,b));
-
-    }
-    }
+}
