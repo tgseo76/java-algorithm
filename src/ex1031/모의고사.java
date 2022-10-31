@@ -1,5 +1,7 @@
 package ex1031;
 
+import java.util.Arrays;
+
 public class 모의고사 {
 //    https://school.programmers.co.kr/learn/courses/30/lessons/42840
     //    1번 : 1, 2, 3, 4, 5, 1, 2, 3, 4, 5,
@@ -25,11 +27,21 @@ public int[] solution(int[] answers) {
 
 
     public static void main(String[] args) {
-    int[] s1={1, 2, 3, 4, 5, 1, 2, 3, 4, 5};
-        int[] s2={2, 1, 2, 3, 2, 4, 2, 5, 2, 1};
-        int[] s3={3, 3, 1, 1, 2, 2, 4, 4, 5, 5};
+    String s1="12345".repeat(2000);
+        String s2="21232425".repeat(1250);
+        String s3="3311224455".repeat(1000);
+        int[] answer = {1,3,2,4,2};
+        int cnt=0;
+        int[] cntStudnet ={0,0,0};
+        int[] arr = {1,2,3,4,5};
 
-
+        for (int i = 0; i < answer.length; i++) {
+            int v = Character.getNumericValue(s1.charAt(i));
+            if(Character.getNumericValue(s1.charAt(i))==answer[i])cntStudnet[0]++;
+            if(Character.getNumericValue(s2.charAt(i))==answer[i])cntStudnet[1]++;
+            if(Character.getNumericValue(s3.charAt(i))==answer[i])cntStudnet[2]++;
+        }
+        System.out.println(Arrays.toString(cntStudnet));
 
     }
 
