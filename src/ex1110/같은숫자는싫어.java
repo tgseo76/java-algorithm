@@ -2,14 +2,14 @@ package ex1110;
 
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /*
 https://school.programmers.co.kr/learn/courses/30/lessons/12906
  */
 public class 같은숫자는싫어 {
-    public static void main(String[] args) {
-        int[] arr = {4,4,4,3,3};
+    public int[] noStack(int []arr) {
         List<Integer> arr2=new ArrayList<>();
 
         arr2.add(arr[0]);
@@ -20,7 +20,15 @@ public class 같은숫자는싫어 {
             }
         }
 
-        System.out.println(arr2);
+        int[] answer = new int[arr2.size()];
+        for (int i = 0; i < arr2.size(); i++) {
+            answer[i]=arr2.get(i);
+        }
+        return answer;
+    }
+    public static void main(String[] args) {
+        int[] arr = {4,4,4,3,3};
+
 
     }
 }
