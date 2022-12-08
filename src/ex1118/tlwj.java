@@ -46,7 +46,7 @@ public class tlwj {
                         ss+=(n-26);
                     }else ss+=n;
                     new_s+=ss;
-            } else if (ss==' ') {
+            } else if (ss==' ') { //공백
                 new_s+=' ';
             }
         }

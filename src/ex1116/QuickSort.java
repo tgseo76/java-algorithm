@@ -1,6 +1,7 @@
 package ex1116;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class QuickSort {
     public void sort(int[] arr,int st,int en){ //st=0 //en=arr.length-1
@@ -15,7 +16,7 @@ public class QuickSort {
 
 //엇갈리면 while문 종료
         while (l<=r){
-            while(l<=en && arr[l]<arr[pivot]){
+            while(l<=en && arr[l]<=arr[pivot]){
 // 배열의 왼쪽에서부터 pivot보다 큰값을 찾을때까지 l++;
                 l+=1;
             }
@@ -44,12 +45,17 @@ public class QuickSort {
 
     }
     public static void main(String[] args) {
-        int[] arr = {1,3,2,8,6,2,4};
+        Scanner input=new Scanner(System.in);
+        int n = input.nextInt();
+
+        int[] arr= new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i]=input.nextInt();
+        }
 
         QuickSort q = new QuickSort();
         q.sort(arr,0,arr.length-1);
         System.out.println(Arrays.toString(arr));
-//           출력값==> [1, 2, 2, 3, 4, 6, 8]
 
     }
 }
